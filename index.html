@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Sabbisetti’s Wedding Invitation</title>
+  <title>Bhuma’s Wedding Invitation</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -162,6 +162,10 @@
       margin-top: 10px;
     }
 
+    .opening-ampersand {
+      margin: 0 0.2em;
+    }
+
     .opening-line {
       width: 150px;
       height: 1px;
@@ -290,12 +294,6 @@
       overflow: hidden;
     }
 
-    .date-decor {
-      color: #d4af37;
-      font-size: 30px;
-      margin-bottom: 15px;
-    }
-
     .date-heading {
       font-family:
         "Great Vibes",
@@ -394,7 +392,14 @@
       }
 
       .opening-subtitle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         font-size: 40px;
+      }
+
+      .opening-ampersand {
+        margin: 0;
       }
 
       .opening-date {
@@ -462,30 +467,13 @@
       events: [
 
         {
-          id: 1,
-
-          title: "Haldi Ceremony",
-
-          date: "November 29, 2026",
-
-          venue:
-            "Bhyripuram, Vizianagaram",
-
-          icon: "🌼"
-        },
-
-
-        {
           id: 2,
 
-          title: "Groom Making Ceremony",
+          title: "Bride Making Ceremony",
 
-          date: "November 28, 2026",
+          date: "December 02, 2026",
 
-          time: "10:15 AM",
-
-          venue:
-            "Mahanthipeta, Kancherla Residency, Natavalsa, Vizianagaram",
+          venue: "At our residency",
 
           icon: "✨"
         },
@@ -957,12 +945,14 @@
 
 
               <div className="opening-title">
-                Sabbisetti’s Wedding Invitation
+                Bhuma’s Wedding Invitation
               </div>
 
 
               <div className="opening-subtitle">
-                Santhosh Kumar & Vishnu priya
+                <span>Vishnu priya</span>
+                <span className="opening-ampersand">&</span>
+                <span>Santhosh Kumar</span>
               </div>
 
 
@@ -1521,7 +1511,7 @@
                 mb-3
               "
             >
-              Sabbisetti’s Wedding Invitation
+              Bhuma’s Wedding Invitation
             </div>
 
 
@@ -1573,23 +1563,25 @@
                 md:text-6xl
                 text-[#d4af37]
                 my-2
+                text-center
               "
             >
 
-              {WEDDING_DATA.groom}
+              {WEDDING_DATA.bride}
 
               <span
                 className="
-                  block
-                  text-xs
-                  md:text-sm
+                  inline-block
+                  text-sm
+                  md:text-base
                   font-sans
                   tracking-widest
                   text-[#f3e5ab]/80
-                  mt-2
+                  align-middle
+                  ml-2
                 "
               >
-                CA
+                C.A.
               </span>
 
             </h1>
@@ -1614,23 +1606,25 @@
                 md:text-6xl
                 text-[#d4af37]
                 my-2
+                text-center
               "
             >
 
-              {WEDDING_DATA.bride}
+              {WEDDING_DATA.groom}
 
               <span
                 className="
-                  block
-                  text-xs
-                  md:text-sm
+                  inline-block
+                  text-sm
+                  md:text-base
                   font-sans
                   tracking-widest
                   text-[#f3e5ab]/80
-                  mt-2
+                  align-middle
+                  ml-2
                 "
               >
-                CA
+                C.A.
               </span>
 
             </h1>
@@ -1734,11 +1728,6 @@
       return (
 
         <section className="wedding-date-section">
-
-          <div className="date-decor">
-            💍
-          </div>
-
 
           <h2 className="date-heading">
             Save the Date
@@ -1866,41 +1855,7 @@
                 bg-white
                 rounded-xl
                 shadow-sm
-              "
-            >
-
-              <h3
-                className="
-                  text-[#4a0e17]
-                  font-bold
-                  mb-2
-                "
-              >
-                Groom's Parents
-              </h3>
-
-
-              <p
-                className="
-                  text-stone-700
-                  font-sans
-                  text-sm
-                "
-              >
-                {WEDDING_DATA.parents.groom}
-              </p>
-
-            </div>
-
-
-            <div
-              className="
-                p-6
-                border
-                border-[#d4af37]/30
-                bg-white
-                rounded-xl
-                shadow-sm
+                text-center
               "
             >
 
@@ -1923,6 +1878,42 @@
                 "
               >
                 {WEDDING_DATA.parents.bride}
+              </p>
+
+            </div>
+
+
+            <div
+              className="
+                p-6
+                border
+                border-[#d4af37]/30
+                bg-white
+                rounded-xl
+                shadow-sm
+                text-center
+              "
+            >
+
+              <h3
+                className="
+                  text-[#4a0e17]
+                  font-bold
+                  mb-2
+                "
+              >
+                Groom's Parents
+              </h3>
+
+
+              <p
+                className="
+                  text-stone-700
+                  font-sans
+                  text-sm
+                "
+              >
+                {WEDDING_DATA.parents.groom}
               </p>
 
             </div>
