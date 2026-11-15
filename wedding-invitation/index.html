@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Satish & Ramya | Wedding Invitation</title>
+  <title>sabbisetti Wedding Invitation</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -353,11 +353,12 @@
 
     .wedding-video {
       width: 100%;
-      max-height: 650px;
+      aspect-ratio: 16 / 9;
+      height: auto;
 
       display: block;
 
-      object-fit: contain;
+      object-fit: cover;
 
       background: #000;
 
@@ -438,23 +439,23 @@
 
     const WEDDING_DATA = {
 
-      groom: "Satish Kumar Kancherla",
+      groom: "SantoshKumar",
 
-      bride: "Ramya Repaka",
+      bride: "Vishnu priya",
 
       tagline:
         "Two Hearts, One Beautiful Life Together",
 
       weddingDate:
-        "2026-09-05T02:51:00",
+        "2026-12-03T08:54:00",
 
       parents: {
 
         bride:
-          "Sri. Repaka. Lakshman Rao & Smt. Repaka. Hema Latha",
+          "Sri. Bhuma Venkata Mohan Rao & Smt. Bhuma Padmavathi",
 
         groom:
-          "Sri. Kancherla. Appa Rao & Smt. Kancherla. Lakshmi"
+          "Sri. Sabbisetti Venkata Raju & Smt. Jayalaxmi"
       },
 
 
@@ -465,12 +466,10 @@
 
           title: "Haldi Ceremony",
 
-          date: "August 31, 2026",
-
-          time: "5:00 PM onwards",
+          date: "November 29, 2026",
 
           venue:
-            "Mahanthipeta, Kancherla Residency, Natavalsa, Vizianagaram",
+            "Bhyripuram, Vizianagaram",
 
           icon: "🌼"
         },
@@ -481,9 +480,9 @@
 
           title: "Groom Making Ceremony",
 
-          date: "August 31, 2026",
+          date: "November 28, 2026",
 
-          time: "11:30 AM onwards",
+          time: "10:15 AM",
 
           venue:
             "Mahanthipeta, Kancherla Residency, Natavalsa, Vizianagaram",
@@ -497,12 +496,12 @@
 
           title: "Wedding Ceremony",
 
-          date: "September 04, 2026",
+          date: "December 03, 2026",
 
-          time: "Muhurtham: 2:51 AM",
+          time: "Muhurtham: 8:54 AM",
 
           venue:
-            "Sree Conventions, Gajapathinagaram, Vizianagaram",
+            "K.P.R Kalyana Mandapam, Mypadu Gate Centre, Nellore",
 
           icon: "🔱"
         },
@@ -513,12 +512,12 @@
 
           title: "Reception",
 
-          date: "September 04, 2026",
+          date: "December 02, 2026",
 
           time: "7:00 PM onwards",
 
           venue:
-            "Sree Conventions, Gajapathinagaram",
+            "K.P.R Kalyana Mandapam, Mypadu Gate Centre, Nellore",
 
           icon: "✨"
         }
@@ -528,20 +527,19 @@
 
       venue: {
 
-        name: "Shree Conventions",
+        name: "K.P.R Kalyana Mandapam",
 
         address:
-          "Opposite to Gajapathinagaram bus stand, Vizianagaram, Andhra Pradesh",
+          "Mypadu Gate Center, Sri Ram Nagar, Kisan Nagar, Ram Nagar, Nellore, Andhra Pradesh 524002",
 
         mapEmbedUrl:
-          "https://maps.google.com/maps?q=Sree%20Conventions%20Gajapathinagaram&t=&z=15&ie=UTF8&iwloc=&output=embed",
+          "https://maps.google.com/maps?q=K.P.R%20Kalyana%20Mandapam%2C%20Mypadu%20gate%20Center%2C%20Sri%20Ram%20Nagar%2C%20Kisan%20Nagar%2C%20Ram%20Nagar%2C%20Nellore%2C%20Andhra%20Pradesh%20524002&t=&z=15&ie=UTF8&iwloc=&output=embed",
 
         mapLink:
-          "https://maps.app.goo.gl/vq93c3D2G4P62dVb6?g_st=com.google.maps.preview.copy",
+          "https://maps.app.goo.gl/8AwBsjxJzJkyT8NJ8?g_st=aw",
 
         contacts: [
-          "+91 8328418381",
-          "+91 8790607209"
+          "9160057990"
         ]
       },
 
@@ -549,28 +547,19 @@
       gallery: [
 
         {
-          url: "./SR.JPG",
-          caption: "Blessings"
+          url: "./Love.jpeg"
         },
 
         {
-          url: "./The smiles.JPG",
-          caption: "Shared Smiles"
+          url: "./Black&White.jpeg"
         },
 
         {
-          url: "./satish.JPG",
-          caption: "Traditional Hues"
+          url: "./Rings.jpeg"
         },
 
         {
-          url: "./TheLove.JPG",
-          caption: "The Beginning"
-        },
-
-        {
-          url: "./Rings.JPG",
-          caption: "The Royal Promise"
+          url: "./pair.jpeg"
         }
 
       ]
@@ -626,7 +615,7 @@
           );
 
           console.error(
-            "Make sure public/wedding-music.mp3 exists."
+            "Make sure public/Trimmed.mp3 exists."
           );
         };
 
@@ -943,7 +932,7 @@
 
           <audio
             ref={audioRef}
-            src="/wedding-music.mp3"
+            src="/Trimmed.mp3"
             loop
             preload="auto"
           />
@@ -968,12 +957,12 @@
 
 
               <div className="opening-title">
-                KANCHERLA WEDDING INVITATION
+                sabbisetti Wedding Invitation
               </div>
 
 
               <div className="opening-subtitle">
-                Satish & Ramya
+                SantoshKumar & Vishnu priya
               </div>
 
 
@@ -981,7 +970,7 @@
 
 
               <div className="opening-date">
-                04 • SEPTEMBER • 2026
+                03 • DECEMBER • 2026
               </div>
 
 
@@ -1093,7 +1082,7 @@
                     mb-3
                   "
                 >
-                  Our Pre-Wedding Story
+                  Our Engagement Story
                 </h2>
 
 
@@ -1532,7 +1521,7 @@
                 mb-3
               "
             >
-              Kancherla Invitation
+              sabbisetti Wedding Invitation
             </div>
 
 
@@ -1600,7 +1589,7 @@
                   mt-2
                 "
               >
-                (CA, CMA, B.Com)
+                CA
               </span>
 
             </h1>
@@ -1641,7 +1630,7 @@
                   mt-2
                 "
               >
-                (B.Sc)
+                CA
               </span>
 
             </h1>
@@ -1759,12 +1748,12 @@
           <div className="date-box">
 
             <div className="date-number">
-              SEPTEMBER 04, 2026
+              DECEMBER 03, 2026
             </div>
 
 
             <div className="date-muhurtham">
-              ✨ Muhurtham: 2:51 AM ✨
+              ✨ Muhurtham: 8:54 AM ✨
             </div>
 
 
@@ -2107,9 +2096,11 @@
                         📅 {event.date}
                       </span>
 
-                      <span>
-                        ⏰ {event.time}
-                      </span>
+                      {event.time && (
+                        <span>
+                          ⏰ {event.time}
+                        </span>
+                      )}
 
                     </div>
 
@@ -2412,11 +2403,7 @@
                   .gallery[index]
                   .url
               }
-              alt={
-                WEDDING_DATA
-                  .gallery[index]
-                  .caption
-              }
+              alt={`Wedding photo ${index + 1}`}
               className="
                 w-full
                 h-full
@@ -2424,27 +2411,6 @@
                 rounded-xl
               "
             />
-
-
-            <div
-              className="
-                absolute
-                bottom-5
-                left-4
-                right-4
-                bg-black/60
-                text-white
-                py-3
-                rounded-lg
-                text-sm
-              "
-            >
-              {
-                WEDDING_DATA
-                  .gallery[index]
-                  .caption
-              }
-            </div>
 
 
             <button
@@ -2587,7 +2553,7 @@
               mt-4
             "
           >
-            Kancherla Family
+            Sabbisetti Family
           </p>
 
 
